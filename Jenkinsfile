@@ -20,16 +20,4 @@ pipeline {
             }
         }
     }
-    
-    post {
-        always {
-            echo 'This runs after all stages, regardless of the build result.'
-        }
-        success {
-            echo 'Build was successful!'
-        }
-        failure {
-            echo 'Build failed.'
-        }
-    }
 }
